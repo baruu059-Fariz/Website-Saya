@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Warteg Berkah</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+  
+  .link-box {
+  text-decoration: none;
+  color: inherit;
+}
+  
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf2;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ffb703, #fb8500);
+      padding: 30px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background-color: #ff9f1c;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #3a1f04;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+      color: #fb8500;
+    }
+
+    /* MENU */
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+    }
+
+    .menu-card {
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .menu-card h3 {
+      color: #d62828;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #2a9d8f;
+    }
+
+    /* PEMBAYARAN */
+    .payment {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .payment div {
+      background-color: white;
+      padding: 25px;
+      border-radius: 15px;
+      width: 200px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    /* LOKASI */
+    .location {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    /* TENTANG */
+    .about {
+      background-color: #ffe8c2;
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    footer {
+      background-color: #fb8500;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    footer span {
+      font-family: 'Pacifico', cursive;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Warteg Berkah</h1>
+    <p>Makan Kenyang • Harga Bersahabat • Rasa Nusantara</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#pembayaran">Pembayaran</a>
+    <a href="#lokasi">Lokasi</a>
+    <a href="#tentang">Tentang</a>
+  </nav>
+
+  <!-- MENU -->
+  <section id="menu">
+    <h2>Menu Favorit 🍛</h2>
+    <div class="menu">
+      <div class="menu-card">
+        <h3>Nasi + Ayam Goreng</h3>
+        <p class="price">Rp13.000</p>
+      </div>
+      <div class="menu-card">
+        <h3>Nasi + Telur Balado</h3>
+        <p class="price">Rp9.000</p>
+      </div>
+      <div class="menu-card">
+        <h3>Nasi + Tempe Orek</h3>
+        <p class="price">Rp7.000</p>
+      </div>
+      <div class="menu-card">
+        <h3>Nasi + Ikan Tongkol</h3>
+        <p class="price">Rp10.000</p>
+      </div>
+      <div class="menu-card">
+        <h3>Sayur Asem</h3>
+        <p class="price">Rp5.000</p>
+      </div>
+      <div class="menu-card">
+        <h3>Es Teh Manis</h3>
+        <p class="price">Rp3.000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PEMBAYARAN -->
+  <section id="pembayaran">
+    <h2>Pembayaran Transfer</h2>
+    <div class="payment">
+      
+    <a href="Dana.html" class="link-box">
+  <div class="box">
+   📱 Dana
+  </div>
+</a>
+      
+    </div>
+  </section>
+
+  <!-- LOKASI -->
+  <section id="lokasi">
+    <h2>Lokasi 📍</h2>
+    <div class="location">
+      <p>Jakarta Barat, Kalideres, Semanan</p>
+      <p>Blok Manong RT 07 RW 10 . NO 160</p>
+      <p>Buka setiap hari: <b>07.00 – 21.00</b></p>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang">
+    <h2>Tentang Kami 🍽️</h2>
+    <div class="about">
+      <p>
+        Warteg Berkah adalah sebuah warteg kecil yang 
+        berada di blok manong, dan wartegnya terletak diteras 
+        rumah yang bernomor 160. Ada semenjak 25 Mei 2024. Juga 
+        Kokinya Bernama darningsih. makanannya sangat lezat dan 
+        bikin nagih. Terget marketnya adalah orang yang tinggal
+        di blok manong
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 <span>Warteg Berkah</span> • Makan Enak Gak Harus Mahal
+  </footer>
+
+</body>
+</html>
